@@ -3,7 +3,7 @@
 * {
   font-family: 'Work Sans', sans-serif;
 }
-/* Header Section */
+/*For Header Section */
 
 header{
     background: rgba(255, 144, 14, 0.10);
@@ -37,7 +37,7 @@ nav li a{
 
 .banner-section{
   text-align: center;
-  width: 80%;
+  width: 90%;
   margin-top: 4rem;
   margin: 0 auto;
 }
@@ -48,9 +48,9 @@ font-weight: 800;
 }
 .bannr-description p{
   color: var(--dark-03, #727272);
-  font-size: 1rem;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 26px;
+  /* line-height: .5rem; */
 }
 .btn-primary{
   width: 8rem;
@@ -68,19 +68,79 @@ width: 100%;
 margin-top: 1.5rem;
 }
 
+/* For Main Section */
+
+main{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+/* .quick-section{
+  width: 70%;
+  padding: 5rem 0rem;
+  margin: 0 auto;
+} */
+.quick-section{
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  margin: 3rem;
+}
+.quick-des{
+  padding: 0rem 3rem;
+}
+.quick-des h3{
+  color: var(--dark-03, #131313);
+font-size: 45px;
+font-weight: 500;
+}
+
+.quick-des p{
+  color: var(--dark-03, #727272);
+font-size: 12px;
+font-weight: 400;
+line-height: 24px;
+}
+
+.quick-1{
+  color: #727272;
+}
+.quick-2{
+  color: #FF900E;
+}
+.quick-img{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: .5rem;
+  padding-left: 4rem;
+}
+.quick-img img{
+margin: 10px;
+border-radius: 5px;
+width: 320px;
+height: 320px;
+
+}
+
+
+
 /* Respnsive For Small Device */
 
 @media screen and (max-width: 768px ) {
   header{
     padding: 1rem 2.5rem;
   }
-  .nav, .nav ul{
+  .nav, .nav ul, .quick-section{
     display: flex;
     flex-direction: column;
   }
   .banner-section{
     width: 100%;
   }
+/* main section */
+main{
+  width: 100%;
+}
+
 }
 
 /* Respnsive For Mediam Device */
