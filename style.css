@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+  font-family: 'Work Sans', sans-serif;
+}
+/* Header Section */
+
+header{
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 100px;
+}
+.nav{
+display: flex;
+justify-content: space-between;
+}
+.nav h2{
+color: var(--dark-01, #131313);
+text-align: center;
+font-size: 45px;
+font-weight: 700;
+}
+.nav ul{
+  display: flex;
+  justify-content: space-between;
+}
+nav li{
+font-size: 18px;
+font-weight: 500;
+list-style: none;
+margin: 1rem;
+
+}
+nav li a{
+  text-decoration: none;
+  color: var(--dark-02, #424242);
+}
+
+.banner-section{
+  text-align: center;
+  width: 80%;
+  margin-top: 4rem;
+  margin: 0 auto;
+}
+.bannr-description > h2{
+  color: var(--dark-01, #131313);
+font-size: 2rem;
+font-weight: 800;
+}
+.bannr-description p{
+  color: var(--dark-03, #727272);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 26px;
+}
+.btn-primary{
+  width: 8rem;
+height: 3rem;
+border-radius: 8px;
+background: #FF900E;
+border: 0;
+font-size: 1rem;
+color: #ffffff;
+margin-top: .5rem;
+}
+.banner-img{
+margin: 0 auto;
+width: 100%;
+margin-top: 1.5rem;
+}
+
+/* Respnsive For Small Device */
+
+@media screen and (max-width: 768px ) {
+  header{
+    padding: 1rem 2.5rem;
+  }
+  .nav, .nav ul{
+    display: flex;
+    flex-direction: column;
+  }
+  .banner-section{
+    width: 100%;
+  }
+}
+
+/* Respnsive For Mediam Device */
+@media screen and (min-width:769 ) and (max-width: 992) {
+  
+}
